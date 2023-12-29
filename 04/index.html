@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>WebGL2 01</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/Matrix4.js"></script>
+        <script type="text/javascript" src="js/Webgl.js"></script>
+        <script type="text/javascript" src="js/Keyboard.js"></script>
+        <script type="text/javascript" src="js/Engine.js"></script>
+        <script type="text/javascript">
+            'use strict'
+            const image = new Image();
+            image.addEventListener('load', () => new Engine(document.querySelector("#canvas"), image));
+            image.src = 'img/cube.png';
+        </script>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+    </body>
+</html>
